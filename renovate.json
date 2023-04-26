@@ -14,7 +14,7 @@
     "packageRules": [
         {
             "matchManagers": [
-                "pip_requirements"
+                "pip-compile"
             ],
             "postUpgradeTasks": {
                 "commands": [
