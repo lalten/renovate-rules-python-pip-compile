@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: renovatebot/github-action@v36
+      - uses: renovatebot/github-action@v36.0.3
         with:
           token: ${{ secrets.RENOVATE_SECRET }}
