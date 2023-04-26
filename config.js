@@ -1,4 +1,4 @@
 module.exports = {
-    autodiscover: true,
+    repositories: ['lalten/renovate-rules-python-pip-compile'],
     allowedPostUpgradeCommands: ['^bazel run //:requirements.update$'],
 };
