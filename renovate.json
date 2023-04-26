@@ -10,5 +10,20 @@
         "lockFileMaintenance": {
             "enabled": true
         }
-    }
+    },
+    "packageRules": [
+        {
+            "matchManagers": [
+                "pip_requirements"
+            ],
+            "postUpgradeTasks": {
+                "commands": [
+                    "bazel run //:requirements.update"
+                ],
+                "fileFilters": [
+                    "**/requirements*.txt"
+                ]
+            }
+        }
+    ]
 }
